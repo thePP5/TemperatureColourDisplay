@@ -1,0 +1,89 @@
+.App {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .temperature-container {
+    position: relative;
+  }
+  
+  .range-slider {
+    -webkit-appearance: none;
+    appearance: none; 
+    width: 70%;
+    height: 40px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  .range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: #007bff;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .value-display {
+    position: absolute;
+    right: 40px;
+    top:10px;
+    left: calc((var(--value) / 100) * 70% - 15px);
+    width: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+   
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  body{
+    transition: background-color 0.3s ease;
+  }
+
+  .ice{
+    background-color: rgb(38, 0, 255);
+  }
+  
+  .cold10{
+    background-color: rgb(104, 113, 236);
+  }
+
+  .cold20{
+    background-color: rgb(0, 255, 255);
+  }
+  
+  .warm30{
+    background-color: rgb(122, 165, 109);
+  }
+  .hot40{
+    background-color: rgb(210, 207, 30);
+  }
+  .hot50{
+    background-color: rgb(236, 217, 131);
+  }
+  .hot60{
+    background-color: rgb(241, 146, 21);
+  }
+  .hot70{
+    background-color: rgb(128, 51, 7);
+  }
+  .hot80{
+    background-color: rgb(109, 62, 8);
+  }
+  .hot90{
+    background-color: rgb(94, 5, 5);
+  }
+  .boiling100{
+    background-color: rgb(182, 8, 8);
+  }
